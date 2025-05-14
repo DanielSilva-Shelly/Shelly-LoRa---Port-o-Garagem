@@ -1,4 +1,4 @@
-const aesKey = 'YOUR CODE';
+const aesKey = 'YOUR AES KEY';
 const CHECKSUM_SIZE = 4;
 
 function hexToBytes(hex) {
