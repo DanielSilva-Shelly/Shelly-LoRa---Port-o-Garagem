@@ -1,5 +1,5 @@
 // 🔐 Chave AES partilhada
-const aesKey = 'YOUR CODE';
+const aesKey = 'YOUR AES KEY';
 const CHECKSUM_SIZE = 4;
 const peerId = 100;  // ID do Shelly recetor
 
