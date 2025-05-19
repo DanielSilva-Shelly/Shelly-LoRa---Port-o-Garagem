@@ -72,22 +72,12 @@ Shelly.addEventHandler(function (e) {
   if (e.name === "button" && e.info.id === 201) {
     //print("🛰 Componente virtual (button:200) evento:", JSON.stringify(e.info));
     if (e.info.event === "single_push") {
+      Shelly.call("Boolean.Set", { id: 200, value: true });
       //print("🛰 Componente virtual (button:200) → enviar comando LoRa");
-      sendPulseCommand();
-    }
-  }
-
-  // ▶️ Botão da App → controlar a luz
-  if (e.name === "switch" && e.info && e.info.id === 0 && e.info.event === "toggle") {
-    if (e.info.state === true) {
-      //print("🔘 Botão App (switch:0 → true) → enviar comando LoRa");
-      sendPulseCommand();
-      Timer.set(3000, false, function () {
-        Shelly.call("Switch.Set", { id: 0, on: false });
-       // print("↩️ Reset switch:0 → false");
+      sendPulseCommand();   
+      Timer.set(15000, false, function () {
+        Shelly.call("Boolean.Set", { id: 200, value: false });
       });
-    } else {
-      //print("ℹ️ Botão App (switch:0 → false) → ignorado");
     }
   }
 });
