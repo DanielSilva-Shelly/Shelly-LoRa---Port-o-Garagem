@@ -36,7 +36,7 @@ This project uses **two Shelly Gen3 devices** equipped with the **LoRa Add-on** 
     -  User presses Virtual Button 201 in the Shelly app.
     -  Script sets Boolean 200 to true (visual feedback).
     -  Sends an encrypted JSON command to the peer device using Lora.SendBytes.
-    -  After 15 seconds, the Boolean resets to false.
+    -  After 21 seconds, the Boolean resets to false.
 
 🧠 Dependencies
   -  Shelly Gen3 firmware (JS Automation support)
