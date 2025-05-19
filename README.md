@@ -52,7 +52,9 @@ This project uses **two Shelly Gen3 devices** equipped with the **LoRa Add-on** 
 ![image](https://github.com/user-attachments/assets/a93a5f28-5c85-41b5-ac23-13bd54bd795d)
 
 
+![53c6e7bb-83ea-48f4-a39b-7e0281e36684](https://github.com/user-attachments/assets/1e74df02-85cc-4e92-a961-f1ed944ee17a)
 
+![2e930ada-942f-4587-a090-a931c0cb7de8](https://github.com/user-attachments/assets/6c4da448-e982-4eef-aa52-199b5c38d861)
 
 🤝 Credits
 Script and integration by [DanielSilva-Shell].
